@@ -1,0 +1,7 @@
+# Prevent direct web access to SMTP credentials and Composer metadata.
+<Files "smtp-config.php">
+  Require all denied
+</Files>
+<Files "composer.json">
+  Require all denied
+</Files>
